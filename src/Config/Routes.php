@@ -3,7 +3,8 @@
 $routes->group('admin', function ($routes) {
 
     $routes->resource('settings', [
-        'filter' => 'permission:settings-permissions',
+        'filter'     => 'permission:settings-permission',
+        'namespace'  => 'julio101290\boilerplate-settings\Controllers\SettingsController',
         'controller' => 'SettingsController',
     ]);
 
